@@ -6,10 +6,16 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
-
+let orario = parseInt.prompt("inserisci l'orario")
 
 // Dichiara la funzione qui.
-
+if (orario < 13) {
+    console.log(`buongiorno ${name}`);
+}else if (orario > 13) {
+    console.log(`Ciaobuon pomeriggio ${name}`);
+}else (orario > 17) {
+    console.log(`buonasera ${name}`);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
